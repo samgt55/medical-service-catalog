@@ -1,49 +1,48 @@
-# 🏥 Catálogo de Servicios Médicos
+# Catalogo de Servicios Medicos
 
-Directorio operativo de proveedores médicos con soporte multilingüe. Incluye teleconsultas, visitas a domicilio, prescripciones, especialidades médicas y clínicas.
+Directorio operativo de proveedores medicos. Incluye teleconsultas, visitas a domicilio, prescripciones, especialidades medicas y clinicas.
 
-## 🚀 Activar GitHub Pages
+## Activar GitHub Pages
 
-1. Ve a **Settings → Pages**
+1. Ve a **Settings -> Pages**
 2. En *Branch* selecciona `main` / carpeta `/ (root)`
-3. Guarda — tu catálogo estará disponible en:
+3. Guarda - tu catalogo estara disponible en:
 
-**`https://samgt55.github.io/medical-service-catalog/`**
+**https://samgt55.github.io/medical-service-catalog/**
 
-## 📁 Estructura
+## Estructura
 
 ```
-├── index.html          # Interfaz principal
-├── css/style.css       # Estilos responsive
-├── js/app.js           # Lógica de filtros y renderizado
-├── data/services.js    # Datos de proveedores (editable)
-└── README.md
+|-- index.html       # Interfaz principal
+|-- css/style.css    # Estilos responsive
+|-- js/app.js        # Logica de filtros y renderizado
+|-- data/services.js # Datos de proveedores (editable)
+`-- README.md
 ```
 
-## 🔍 Funcionalidades
+## Funcionalidades
 
-- **5 categorías**: Teleconsulta · Domicilio · Prescripción · Especialidades · Clínicas
-- **Búsqueda en tiempo real** por nombre, idioma o país
-- **Filtro por idioma** — 15 idiomas disponibles
-- **Diseño responsive** para móvil y escritorio
-- **Sin dependencias externas** — 100% estático, listo para GitHub Pages
+- **5 categorias**: Teleconsulta - Domicilio - Prescripcion - Especialidades - Clinicas
+- **Busqueda en tiempo real** por nombre, pais o ciudad
+- **Filtro por pais** - 22 paises disponibles
+- **Diseno responsive** para movil y escritorio
+- **Sin dependencias externas** - 100% estatico, listo para GitHub Pages
 
-## ✏️ Actualizar datos
+## Actualizar datos
 
-Edita `data/services.js`. Cada entrada sigue este esquema:
+Edite `data/services.js`. Cada entrada sigue este esquema:
 
 ```js
 {
   name: "Nombre del proveedor",
   lang: "Idioma(s)",
-  phone: "Teléfono",       // opcional
-  email: "Correo",         // opcional
+  phone: "Telefono",    // opcional
+  email: "Correo",     // opcional
   schedule: "Horario",
-  country: "País",
-  city: "Ciudad",          // opcional
-  note: "Instrucciones"    // opcional
+  country: "Pais",
+  city: "Ciudad",      // opcional
+  note: "Instrucciones" // opcional
 }
 ```
 
----
-*Última actualización: Junio 2026 — Uso interno operativo*
+*Ultima actualizacion: Junio 2026 - Uso interno operativo*
