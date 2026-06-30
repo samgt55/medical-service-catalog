@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Servicios Médicos</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>🏥 Catálogo de Servicios Médicos</h1>
+      <p class="subtitle">Directorio operativo de proveedores — Teleconsultas · Domicilios · Prescripciones · Especialidades</p>
+    </div>
+  </header>
+
+  <nav class="tab-bar">
+    <button class="tab active" data-tab="teleconsulta">📱 Teleconsulta</button>
+    <button class="tab" data-tab="domicilio">🏠 Domicilio</button>
+    <button class="tab" data-tab="prescripcion">💊 Prescripción</button>
+    <button class="tab" data-tab="especialidades">🩺 Especialidades</button>
+    <button class="tab" data-tab="clinicas">🏢 Clínicas</button>
+  </nav>
+
+  <main>
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="🔍  Buscar por nombre, idioma, país…" />
+      <select id="lang-filter">
+        <option value="">Todos los idiomas</option>
+        <option>Inglés</option><option>Español</option><option>Alemán</option>
+        <option>Portugués</option><option>Francés</option><option>Italiano</option>
+        <option>Mandarín</option><option>Polaco</option><option>Neerlandés</option>
+        <option>Árabe</option><option>Ruso</option><option>Checo</option>
+        <option>Búlgaro</option><option>Húngaro</option><option>Croata</option>
+      </select>
+    </div>
+    <div id="cards-container"></div>
+  </main>
+
+  <footer>
+    <p>Última actualización: Junio 2026 · Uso interno operativo</p>
+  </footer>
+
+  <script src="data/services.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
